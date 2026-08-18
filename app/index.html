@@ -1,12 +1,15 @@
 <!doctype html>
 <html>
   <head>
-    <title>Westeros Demo</title>
+    <title>Counter</title>
   </head>
   <body style="margin: 0; min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 24px; background: #ffffff; color: #0b3d1f; font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, 'Courier New', monospace;">
-    <h1 style="margin: 0; font-size: 40px; font-weight: 700; letter-spacing: -1px; color: #0f7a3d;">Hello World</h1>
-    <p id="message" style="margin: 0; font-size: 16px; letter-spacing: 0.5px; color: #2f6b48;">Hello from HTML</p>
-    <button id="button" style="font-family: inherit; font-size: 15px; font-weight: 600; letter-spacing: 0.5px; color: #ffffff; background: linear-gradient(180deg, #22c55e 0%, #16a34a 100%); border: none; border-radius: 10px; padding: 12px 28px; cursor: pointer; box-shadow: 0 6px 16px rgba(22, 163, 74, 0.35); transition: transform 0.15s ease, box-shadow 0.15s ease;">Click me</button>
+    <h1 style="margin: 0; font-size: 40px; font-weight: 700; letter-spacing: -1px; color: #0f7a3d;">Counter</h1>
+    <p id="count" style="margin: 0; font-size: 64px; font-weight: 700; letter-spacing: -2px; font-variant-numeric: tabular-nums; color: #0f7a3d;">0</p>
+    <div style="display: flex; gap: 16px;">
+      <button id="decrement" aria-label="Decrease" style="font-family: inherit; font-size: 24px; font-weight: 600; line-height: 1; color: #ffffff; background: linear-gradient(180deg, #22c55e 0%, #16a34a 100%); border: none; border-radius: 10px; padding: 14px 24px; cursor: pointer; box-shadow: 0 6px 16px rgba(22, 163, 74, 0.35); transition: transform 0.15s ease, box-shadow 0.15s ease;">&minus;</button>
+      <button id="increment" aria-label="Increase" style="font-family: inherit; font-size: 24px; font-weight: 600; line-height: 1; color: #ffffff; background: linear-gradient(180deg, #22c55e 0%, #16a34a 100%); border: none; border-radius: 10px; padding: 14px 24px; cursor: pointer; box-shadow: 0 6px 16px rgba(22, 163, 74, 0.35); transition: transform 0.15s ease, box-shadow 0.15s ease;">+</button>
+    </div>
     <script src="app.js"></script>
   </body>
 </html>
